@@ -1,0 +1,9 @@
+#A01D1D vermelho escuro 1
+#ED1C24 vermelho claro 1
+#D02222 vermelho claro 2
+#7F1515 vermelho escuro 2
+#D82A2A vermelho claro 3
+#AE1C1C vermelho escuro 3
+#CCCAC8
+#807F7E
+#E3E1DE

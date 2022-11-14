@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>Magic Hat</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <!-- Favicons -->
+    <link href="img/MagicHat/icone.ico" rel="icon">
+    <link href="img/MagicHat/icone.ico" rel="apple-touch-icon">
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+        rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="vendor/animate.css/animate.min.css" rel="stylesheet">
+    <link href="vendor/aos/aos.css" rel="stylesheet">
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="vendor/remixicon/remixicon.css" rel="stylesheet">
+    <link href="vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/footer.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+
+    <!-- ======= Header ======= -->
+    <header id="header" class="d-flex">
+        <div class="container d-flex align-items-center justify-content-between">
+
+            <div class="logo">
+                <h1><img src="img/MagicHat/logo.png" height="75" width="45"
+                        style="margin-right: 10px; margin-bottom: 10px;">
+                    <a href="index.html">Magic Hat</a></img>
+                </h1>
+            </div>
+
+            <nav id="navbar" class="navbar">
+                <ul>
+                    <li><a class="nav-link scrollto" href="index.html">Home</a></li>
+                    <li><a class="nav-link scrollto" href="produtos.html">Brinquedos</a></li>
+                    <li><a class="nav-link scrollto" href="index.html#flipCard">Porque brincar</a></li>
+                    <li><a class="nav-link scrollto active" href="faleconosco.html">Fale conosco</a></li>
+                    <li><a class="nav-link scrollto" href="login.html">
+                        <ion-icon name="person" style="width: 50px; height: 27px;"></ion-icon>
+                      </a>
+                </ul>
+                <i class="bi bi-list mobile-nav-toggle"></i>
+            </nav><!-- .navbar -->
+
+        </div>
+    </header><!-- End Header -->
+
+    <main id="main">
+        <!-- ======= About Section ======= -->
+
+
+
+
+
+
+        <!-- ======= Contact Section ======= -->
+        <section id="contact" class="contact">
+            <div class="container">
+
+                <div class="section-title" data-aos="zoom-out">
+                    <h2>Contato</h2>
+                    <p>Fale conosco</p>
+                </div>
+
+                <div class="row mt-5">
+
+                    <div class="col-lg-4" data-aos="fade-right">
+                        <div class="info">
+                            <div class="address">
+                                <i class="bi bi-geo-alt"></i>
+                                <h4>Localização:</h4>
+                                <p>Av. Águia de Haia, 2633 - Cidade Antônio Estêvão de Carvalho, São Paulo</p>
+                            </div>
+
+                            <div class="email">
+                                <i class="bi bi-envelope"></i>
+                                <h4>Email:</h4>
+                                <p>magichat@outlook.com</p>
+                            </div>
+
+                            <div class="phone">
+                                <i class="bi bi-phone"></i>
+                                <h4>Telefone:</h4>
+                                <p>(11) 69318-8308</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-lg-8 mt-5 mt-lg-0" data-aos="fade-left">
+
+                        <form method="post" action="controller/controller.php?funcao=contato" class="php-email-form" id="formCont" name="formCont">
+                            <div class="row">
+                                <div class="col-md-6 form-group">
+                                    <input type="text" name="txtNome" class="form-control" id="txtNome" placeholder="Nome"
+                                        required>
+                                </div>
+                                <div class="col-md-6 form-group mt-3 mt-md-0">
+                                    <input type="email" class="form-control" name="txtEmail" id="txtEmail" placeholder="Email"
+                                        required>
+                                </div>
+                            </div>
+                            <div class="form-group mt-3">
+                                <input type="text" class="form-control" name="txtAssunto" id="txtAssunto"
+                                    placeholder="Assunto" required>
+                            </div>
+                            <div class="form-group mt-3">
+                                <textarea class="form-control" name="txtMensagem" id="txtMensagem" rows="5" placeholder="Mensagem"
+                                    required></textarea>
+                            </div>
+ 
+                            <br>
+
+                            <div class="text-center"><button type="submit">Enviar</button></div>
+                        </form>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </section><!-- End Contact Section -->
+        <section id="faq" class="faq">
+            <div class="container">
+
+                <div class="section-title" data-aos="zoom-out">
+                    <h2>F.A.Q</h2>
+                    <p>Pergunstas Frequentes</p>
+                </div>
+
+                <ul class="faq-list">
+
+                    <li>
+                        <div data-bs-toggle="collapse" class="collapsed question" href="#faq1">Non consectetur a erat
+                            nam at lectus urna duis? <i class="bi bi-chevron-down icon-show"></i><i
+                                class="bi bi-chevron-up icon-close"></i></div>
+                        <div id="faq1" class="collapse" data-bs-parent=".faq-list">
+                            <p>
+                                Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non
+                                curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus
+                                non.
+                            </p>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div data-bs-toggle="collapse" href="#faq2" class="collapsed question">Feugiat scelerisque
+                            varius morbi enim nunc faucibus a pellentesque? <i
+                                class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i>
+                        </div>
+                        <div id="faq2" class="collapse" data-bs-parent=".faq-list">
+                            <p>
+                                Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum
+                                velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec
+                                pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus
+                                turpis massa tincidunt dui.
+                            </p>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div data-bs-toggle="collapse" href="#faq3" class="collapsed question">Dolor sit amet
+                            consectetur adipiscing elit pellentesque habitant morbi? <i
+                                class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i>
+                        </div>
+                        <div id="faq3" class="collapse" data-bs-parent=".faq-list">
+                            <p>
+                                Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus
+                                pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum
+                                tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna
+                                molestie at elementum eu facilisis sed odio morbi quis
+                            </p>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div data-bs-toggle="collapse" href="#faq4" class="collapsed question">Ac odio tempor orci
+                            dapibus. Aliquam eleifend mi in nulla? <i class="bi bi-chevron-down icon-show"></i><i
+                                class="bi bi-chevron-up icon-close"></i></div>
+                        <div id="faq4" class="collapse" data-bs-parent=".faq-list">
+                            <p>
+                                Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum
+                                velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec
+                                pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus
+                                turpis massa tincidunt dui.
+                            </p>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div data-bs-toggle="collapse" href="#faq5" class="collapsed question">Tempus quam pellentesque
+                            nec nam aliquam sem et tortor consequat? <i class="bi bi-chevron-down icon-show"></i><i
+                                class="bi bi-chevron-up icon-close"></i></div>
+                        <div id="faq5" class="collapse" data-bs-parent=".faq-list">
+                            <p>
+                                Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in est
+                                ante in. Nunc vel risus commodo viverra maecenas accumsan. Sit amet nisl suscipit
+                                adipiscing bibendum est. Purus gravida quis blandit turpis cursus in
+                            </p>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div data-bs-toggle="collapse" href="#faq6" class="collapsed question">Tortor vitae purus
+                            faucibus ornare. Varius vel pharetra vel turpis nunc eget lorem dolor? <i
+                                class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i>
+                        </div>
+                        <div id="faq6" class="collapse" data-bs-parent=".faq-list">
+                            <p>
+                                Laoreet sit amet cursus sit amet dictum sit amet justo. Mauris vitae ultricies leo
+                                integer malesuada nunc vel. Tincidunt eget nullam non nisi est sit amet. Turpis nunc
+                                eget lorem dolor sed. Ut venenatis tellus in metus vulputate eu scelerisque.
+                                Pellentesque diam volutpat commodo sed egestas egestas fringilla phasellus faucibus.
+                                Nibh tellus molestie nunc non blandit massa enim nec.
+                            </p>
+                        </div>
+                    </li>
+
+                </ul>
+
+            </div>
+        </section>
+
+    </main>
+    <!-- End #main -->
+
+
+
+    <!-- ======= Footer ======= -->
+    <svg class="hero-waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+        viewBox="0 24 150 28 " preserveAspectRatio="none">
+        <defs>
+            <path id="wave-path" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z">
+        </defs>
+        <g class="wave1">
+            <use xlink:href="#wave-path" x="50" y="4" fill="rgba(161,30,29, .1)">
+        </g>
+        <g class="wave2">
+            <use xlink:href="#wave-path" x="70" y="0" fill="rgba(161,30,29, .2)">
+        </g>
+        <g class="wave3">
+            <use xlink:href="#wave-path" x="50" y="7" fill="#A11E1D">
+        </g>
+    </svg>
+
+
+    <footer>
+
+        <!-- Seção de Mídias Sociais -->
+        <ul class="social_icon">
+          <li><a href="https://twitter.com/Vec_Foxtor?t=LErlF9MN4Kwr6xAGfRHRnQ&s=09">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+          <li><a href="https://www.instagram.com/vik.roma/">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+          <li><a href="https://www.linkedin.com/in/victor-r-f-de-roma-9b5858211/">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+          <li><a href="https://github.com/VictorRFdRoma">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+        </ul>
+  
+  
+        <div class="container text-center text-md-start mt-5">
+          <div class="row mt-3">
+            <!-- 1° Coluna -->
+            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+  
+              <!-- Conteúdo sobre o Site -->
+  
+              <h3 class="fw-bold">
+                Magic Hat
+              </h3>
+  
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam ipsam fugiat cum provident aut odio.
+                Quae aliquid eveniet neque et fuga sint excepturi laborum nam, iure, a natus ipsa consequuntur!
+              </p>
+            </div>
+  
+            <!-- 3° Coluna -->
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+              <!-- Links Desenvolvedores -->
+              <h3 class="fw-bold">
+                Desenvolvedores
+              </h3>
+  
+              <p class="txtCenter">
+                <a href="https://github.com/joaopedro2602" target="_blank">João Pedro Cabral</a>
+              </p>
+  
+              <p class="txtCenter">
+                <a href="https://github.com/MarianeBS" target="_blank">Mariane Souza</a>
+              </p>
+  
+              <p class="txtCenter">
+                <a href="https://github.com/TamirisRC" target="_blank">Tamiris Carvalho</a>
+              </p>
+  
+              <p class="txtCenter">
+                <a href="https://github.com/vek03" target="_blank">Victor Cardoso</a>
+              </p>
+  
+              <p class="txtCenter">
+                <a href="https://github.com/VictordRoma" target="_blank">Victor Roma</a>
+              </p>
+  
+            </div>
+  
+            <!-- 4° Coluna -->
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+              <!-- Links Contato -->
+              <h3 class="fw-bold">
+                Contato
+              </h3>
+              <p>
+                Av. Águia de Haia, 2633 - Cidade Antônio Estêvão de Carvalho, São Paulo
+              </p>
+  
+              <p>
+                magichat@outlook.com
+              </p>
+  
+              <p>
+                (11) 69318-8308
+              </p>
+  
+            </div>
+  
+          </div>
+  
+        </div>
+        </div>
+  
+        <p>©2022 Copyright <b>Magic Hat</b> | All Rights Reserved</p>
+      </footer>
+    <!-- End Footer -->
+
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+            class="bi bi-arrow-up-short"></i></a>
+
+    <!-- Vendor JS Files -->
+    <script src="vendor/aos/aos.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="vendor/php-email-form/validate.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
