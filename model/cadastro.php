@@ -18,6 +18,7 @@ class Cadastro extends Banco {
     private $preferencia;
     private $assunto;
     private $mensagem;
+    private $pesquisa;
 
     //Metodos Set
     public function setId($string){
@@ -58,6 +59,9 @@ class Cadastro extends Banco {
     }
     public function setMensagem($string){
         $this->mensagem = $string;
+    }
+    public function setPesquisa($string){
+        $this->pesquisa = $string;
     }
 
     //Metodos Get
@@ -100,6 +104,9 @@ class Cadastro extends Banco {
     public function getMensagem(){
         return $this->mensagem;
     }
+    public function getPesquisa(){
+        return $this->pesquisa;
+    }
 
     //função que manda os valores para o metodo setCadastros
     public function incluir(){
@@ -114,8 +121,12 @@ class Cadastro extends Banco {
         return $this->getLogin($login, $password);
     }
 
-    public function listar($id){
-        return $this->getCadastros($id);
+    public function pesquisa($pesquisa){
+        return $this->getItem($pesquisa);
+    }
+
+    public function captar($id){
+        return $this->getCliente($id);
     }
 
     public function editar(){

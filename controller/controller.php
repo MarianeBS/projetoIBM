@@ -17,6 +17,8 @@ class controller{
             $this->login($login, $password);
         }else if(isset($_GET['funcao']) && $_GET['funcao'] == "contato"){
             $this->contato();
+        }else if(isset($_GET['funcao']) && $_GET['funcao'] == "pesquisar"){
+            $this->pesquisar();
         }
     }
 
@@ -39,6 +41,16 @@ class controller{
         }
     }
 
+    public function pesquisar($pesquisa){
+        $result = $this->cadastro->pesquisa($pesquisa);
+        if($result >= 1){
+            return $result;
+        }else{
+            echo "<script>alert('Que pena...Não temos produtos com esse nome...');document.location='produtos.html';</script>";
+        }
+        
+    }
+
     private function contato(){
         $this->cadastro->setNome($_POST['txtNome']);
         $this->cadastro->setEmail($_POST['txtEmail']);
@@ -55,14 +67,23 @@ class controller{
     private function login($login, $password){
         $result = $this->cadastro->login($login, $password);
         if($result >= 1){
-            echo "<script>alert('Login Efetuado com sucesso!');document.location='../index.html'</script>";
+            echo "<script>alert('Login Efetuado com sucesso!');document.location='../index.php?id=" . $result . "'</script>";
         }else{
             echo "<script>alert('E-mail e/ou senha incorretos! Tente Novamente!');document.location='../login.html'</script>";
         }
     }
 
-    public function listar($id){
-        return $result = $this->cadastro->listar($id);
+    private function cliente($id){
+        $result = $this->cadastro->login($id);
+        if($result >= 1){
+            echo "<script>alert('Login Efetuado com sucesso!');document.location='../index.php?id=" . $result . "'</script>";
+        }else{
+            echo "<script>alert('E-mail e/ou senha incorretos! Tente Novamente!');document.location='../login.html'</script>";
+        }
+    }
+
+    public function captar($id){
+        return $result = $this->cadastro->captar($id);
     }
 
     private function editar($id){

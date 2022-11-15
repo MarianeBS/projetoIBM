@@ -78,13 +78,10 @@ class Banco{
         }
     }
 
-    public function getCadastros($id){
+    public function getCliente($id){
         try {
-            if(isset($id) && $id > 0){
-                $stmt = $this->mysqli->query("SELECT * FROM tbl_cliente WHERE id = '" . $id . "';");
-            }else{
-                $stmt = $this->mysqli->query("SELECT * FROM tbl_cliente;");
-            }
+            $stmt = $this->mysqli->query("SELECT * FROM tbl_cliente WHERE id = '" . $id . "';");
+
             
             $lista = $stmt->fetch_all(MYSQLI_ASSOC);
             $f_lista = array();
@@ -92,6 +89,7 @@ class Banco{
             foreach ($lista as $l) {
                 $f_lista[$i]['id'] = $l['id'];
                 $f_lista[$i]['nome'] = $l['nome'];
+                $f_lista[$i]['sobrenome'] = $l['sobrenome'];
                 $f_lista[$i]['email'] = $l['email'];
                 $f_lista[$i]['senha'] = $l['senha'];
                 $f_lista[$i]['endereco'] = $l['endereco'];
@@ -99,11 +97,40 @@ class Banco{
                 $f_lista[$i]['cep'] = $l['cep'];
                 $f_lista[$i]['cidade'] = $l['cidade'];
                 $f_lista[$i]['estado'] = $l['estado'];
+                $f_lista[$i]['preferencia'] = $l['preferencia'];
                 $i++;
             }
             return $f_lista;
         } catch (Exception $e) {
             echo "Ocorreu um erro ao tentar buscar Todos." . $e;
+        }
+    }
+
+    public function getItem($pesquisa){
+        try {
+            $stmt = $this->mysqli->query("SELECT * FROM tbl_produto WHERE nome LIKE '%" . $pesquisa . "%';");
+
+            $total = mysqli_num_rows($stmt); 
+            $lista = $stmt->fetch_all(MYSQLI_ASSOC);
+            $f_lista = array();
+            $i = 0;
+            foreach ($lista as $l) {
+                $f_lista[$i]['id'] = $l['id'];
+                $f_lista[$i]['id_categoria'] = $l['id_categoria'];
+                $f_lista[$i]['nome'] = $l['nome'];
+                $f_lista[$i]['preco'] = $l['preco'];
+                $f_lista[$i]['img1'] = $l['img1'];
+                $i++;
+            }
+
+            if($total >= 1){
+                return $f_lista;
+            }else{
+                return 0;
+            }
+
+        } catch (Exception $e) {
+            echo "Ocorreu um erro ao tentar buscar o pruduto!" . $e;
         }
     }
 

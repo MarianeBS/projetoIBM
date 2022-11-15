@@ -62,7 +62,8 @@
 }
 
 .flip-box-header {
-    font-size: 30px;
+    font-size: 35px;
+    font-weight: bold;
 }
 
 .flip-box p {
