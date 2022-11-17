@@ -1,0 +1,34 @@
+-- RN --
+RN001-A única forma de pagamento deverá ser via cartão de crédito ou débito;
+RN002: Caso o endereço de entrega do produto seja na cidade de São Paulo, o frete deverá ser entre 0 a 20 reais e caso seja fora da cidade, o valor do frete deverá ser entre 20 a 35 reais;
+
+-- RF --
+RF001-Realizar Cadastro;
+RF002-Selecionar Categoria de Preferencia;
+RF003-Fazer Login;
+RF004-Alterar informações;
+RF005-Vizualizar os dados do Cadastro;
+RF006-Pesquisar Produto;
+RF007-Filtrar Produtos por categoria;
+RF008-Filtrar Produtos por faixa etária;
+RF009-Visualizar Detalhes do produto;
+RF010-Adicionar produto ao carrinho;
+RF011-Visualizar itens do Carrinho;
+RF012-Calcular Frete;
+RF013-Selecionar forma de pagamento;
+RF014-Finalizar compra;
+RF015-Solicitar Contato;
+
+-- RNF --
+
+RNF001-O design deve ser atrativo para crianças;
+RNF002-e as cores selecionadas devem trazem o contraste entre quentes e frias, trazendo assim o equilíbrio visual necessário em um site para que não haja desconfortos;
+RNF003-Como forma de interação com o cliente o site oferecera um jogo de quebra-cabeça;
+RNF004-Além disso a interfase do site deverá ser intuitiva e de fácil manuseio;
+RNF005-Compra deve exigir o mínimo de informações possíveis;
+RNF006-O website deverá usar as linguagens PHP, JavaScript, a linguagem de marcação HTML,
+linguagem de design gráfico CSS e framework Bootstrap;
+RNF007-O site deverá apresentar um Carrossel de produtos baseado na seleção de categoria feita na realização do cadastro;
+RNF008-Todos os produtos devem possuir um texto descritivo e seus detalhes;
+RNF009-O banco de dados utilizado deverá ser o MYSQL;
+RNF010-Registar os produtos no Banco de dados por categoria;

@@ -1,0 +1,37 @@
+.picture__input {
+    display: none;
+}
+
+.picture {
+    width: 300px;
+    height: 300px;
+    background: #A11E1D;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ddd;
+    border: 2px solid #000000;
+    cursor: pointer;
+    font-family: sans-serif;
+    transition: color 300ms ease-in-out;
+}
+
+.picture:hover {
+    border: 3px solid #000000;
+    color: #ddd;
+    font-weight: bold;
+    background: #cd1515;
+}
+
+.picture:active {
+    color: #000000;
+    font-weight: bold;
+}
+
+.picture:focus {
+    box-shadow: 0 0 12px #000000;
+}
+
+.picture__img {
+    max-width: 100%;
+}
